@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.h-xlarge {
+  height: 30rem;
+}
+.h-xxlarge {
+  height: 44rem;
+}
+div[class*=box] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-two {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative; 
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+.btn-three {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.5s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+#arrowhide::-webkit-outer-spin-button,
+#arrowhide::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+#arrowhide{
+  -moz-appearance:textfield;
+}
+input[type="date"]::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
