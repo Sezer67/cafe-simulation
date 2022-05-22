@@ -1,4 +1,6 @@
 # NestJS - PSQL - ReactJS Cafe Application
+- [video]: https://www.linkedin.com/posts/sezerkenar_reactjs-nestjs-typeorm-activity-6934239259520299008-Yocj?utm_source=linkedin_share&utm_medium=member_desktop_web "Promotional Video"
+
 
 ## How To Execute the App locally
 ### **Backend**
@@ -6,7 +8,6 @@ ___
 - Download postgresql on computer.
 - Change the features of database from backend/.env file.
 - .env dosyasında 'DB_NAME' değerine verdiğiniz isim adında pgAdminden manuel olarak veritabanı oluşturunuz.
-- 
 - If nestjs not exist in computer, run `npm i -g @nestjs/cli`
 - To execute project locally `(localhost:8080)` run `npm start`
 
