@@ -1,5 +1,6 @@
 # NestJS - PSQL - ReactJS Cafe Application
-[play](https://www.linkedin.com/posts/sezerkenar_reactjs-nestjs-typeorm-activity-6934239259520299008-Yocj?utm_source=linkedin_share&utm_medium=member_desktop_web) "Promotional Video"
+#### Promotional Video
+[play](https://www.linkedin.com/posts/sezerkenar_reactjs-nestjs-typeorm-activity-6934239259520299008-Yocj?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 
 ## How To Execute the App locally
